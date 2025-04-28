@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,33 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for cyberbullying detector
+				shield: {
+					50: '#f0f4ff',
+					100: '#e0e9fd',
+					200: '#c7d7fc',
+					300: '#a4bcf8',
+					400: '#8098f2',
+					500: '#6373ea',
+					600: '#4b50db',
+					700: '#4040c0',
+					800: '#36379b',
+					900: '#303278',
+					950: '#1e1c46',
+				},
+				warning: {
+					50: '#fff8ed',
+					100: '#ffefd4',
+					200: '#ffdba8',
+					300: '#ffc070',
+					400: '#ff9a36',
+					500: '#ff7d10',
+					600: '#ff6003',
+					700: '#cc4102',
+					800: '#a13208',
+					900: '#832b0d',
+					950: '#461105',
 				}
 			},
 			borderRadius: {
@@ -84,11 +112,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-gentle': {
+					'0%, 100%': {
+						opacity: '1',
+					},
+					'50%': {
+						opacity: '0.8',
+					},
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-gentle': 'pulse-gentle 2s infinite',
 			}
 		}
 	},
