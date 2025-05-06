@@ -1,6 +1,6 @@
 
 
-**URL**: https://lovable.dev/projects/0408085a-0ffd-4468-becd-3c6879fd0b9d
+**URL**:https://www.shorturl.at/shortener.php
 
 
  **Protect Against Online Harassment**
@@ -34,4 +34,4 @@ Yes, you can!
 
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Read more here: [Setting up a custom domain] https://www.shorturl.at/shortener.php
