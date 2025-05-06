@@ -3,30 +3,26 @@
 **URL**: https://lovable.dev/projects/0408085a-0ffd-4468-becd-3c6879fd0b9d
 
 
-**Edit a file directly in GitHub**
+ **Protect Against Online Harassment**
+An AI-powered cyberbullying detection system that identifies and prevents online harassment, creating safer digital spaces for everyone.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**About the Project**
+This project uses machine learning algorithms to analyze text and detect potential cyberbullying with high accuracy. It empowers individuals, schools, and organizations to foster safer online environments by identifying harmful content in real time.
 
-## What technologies are used for this project?
+##  Performance Metrics
 
-This project is built with:
+94% accuracy in detecting harmful content
 
-- Python
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-  
+24/7 real-time protection
+
+**Built With**
+
+Python
+scikit-learn / TensorFlow / PyTorch (depending on your model)
+Flask / Streamlit (or your chosen framework)
+NLP techniques
 
 ## How can I deploy this project?
 
