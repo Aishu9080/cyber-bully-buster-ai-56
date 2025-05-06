@@ -1,6 +1,5 @@
 
-import { AlertTriangle, ShieldCheck, Info } from "lucide-react";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { AlertTriangle, ShieldCheck } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 
 interface ResultDisplayProps {
@@ -14,43 +13,31 @@ const ResultDisplay = ({ result }: ResultDisplayProps) => {
   const confidencePercent = result.confidence * 100;
   
   return (
-    <div className="space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-300">
+    <div className="mt-4 border rounded-md p-4">
       {result.isBullying ? (
-        <Alert className="border-warning-500 bg-warning-50">
-          <AlertTriangle className="h-5 w-5 text-warning-600" />
-          <AlertTitle className="text-warning-700">Potential Cyberbullying Detected</AlertTitle>
-          <AlertDescription className="text-sm text-warning-600">
-            This text shows characteristics that may be considered cyberbullying.
-            Please review the content before sharing.
-          </AlertDescription>
-        </Alert>
+        <div className="flex gap-2 text-amber-600 mb-2">
+          <AlertTriangle className="h-5 w-5" />
+          <div>
+            <p className="font-medium">Potential Cyberbullying Detected</p>
+            <p className="text-sm">This text shows signs of cyberbullying content.</p>
+          </div>
+        </div>
       ) : (
-        <Alert className="border-green-500 bg-green-50">
-          <ShieldCheck className="h-5 w-5 text-green-600" />
-          <AlertTitle className="text-green-700">No Cyberbullying Detected</AlertTitle>
-          <AlertDescription className="text-sm text-green-600">
-            This text appears to be safe and does not contain obvious cyberbullying content.
-          </AlertDescription>
-        </Alert>
+        <div className="flex gap-2 text-green-600 mb-2">
+          <ShieldCheck className="h-5 w-5" />
+          <div>
+            <p className="font-medium">No Cyberbullying Detected</p>
+            <p className="text-sm">This text appears to be safe.</p>
+          </div>
+        </div>
       )}
       
-      <div className="bg-white p-4 rounded-md border">
-        <div className="flex items-center justify-between mb-2">
-          <div className="text-sm font-medium">Confidence Score</div>
-          <div className="text-sm font-medium">{confidencePercent.toFixed(0)}%</div>
+      <div className="mt-3">
+        <div className="flex justify-between text-xs mb-1">
+          <span>Confidence</span>
+          <span>{confidencePercent.toFixed(0)}%</span>
         </div>
-        <Progress 
-          value={confidencePercent} 
-          className={`h-2 ${result.isBullying ? 'bg-warning-100' : 'bg-green-100'}`} 
-        />
-        <div className="mt-2 flex items-start gap-2">
-          <Info className="h-4 w-4 text-muted-foreground mt-0.5" />
-          <p className="text-xs text-muted-foreground">
-            {result.isBullying 
-              ? "Higher scores indicate stronger confidence in detecting cyberbullying content." 
-              : "Lower scores indicate stronger confidence that the content is safe."}
-          </p>
-        </div>
+        <Progress value={confidencePercent} className="h-2" />
       </div>
     </div>
   );
