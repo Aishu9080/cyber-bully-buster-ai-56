@@ -1,7 +1,6 @@
 
 
-**URL**:https://www.shorturl.at/shortener.php
-
+**URL**:https://cyber-bully-buster-ai-56.lovable.app/
 
  **Protect Against Online Harassment**
 An AI-powered cyberbullying detection system that identifies and prevents online harassment, creating safer digital spaces for everyone.
@@ -34,4 +33,4 @@ Yes, you can!
 
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain] https://www.shorturl.at/shortener.php
+Read more here: [Setting up a custom domain] https://cyber-bully-buster-ai-56.lovable.app/
